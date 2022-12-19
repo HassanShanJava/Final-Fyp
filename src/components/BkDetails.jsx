@@ -50,16 +50,14 @@ const BkDetails = ({ show, item }) => {
                   Back
                 </Button>
                 &nbsp;&nbsp;
-                <Link to="/chat" >
-                <Button variant="outlined" endIcon={<PhoneForwardedIcon />}>
-                  CHAT
-                </Button>
+                <Link to="/chat">
+                  <Button variant="outlined" endIcon={<PhoneForwardedIcon />}>
+                    CHAT
+                  </Button>
                 </Link>
                 &nbsp;&nbsp;
-                <Link to="/chat" >
-                <Button variant="outlined" >
-                  Online Payment
-                </Button>
+                <Link to="/payment">
+                  <Button variant="outlined">Online Payment</Button>
                 </Link>
               </Box>
             </Grid>

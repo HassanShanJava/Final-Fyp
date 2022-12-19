@@ -34,6 +34,7 @@ import EditPassword from "./userDashboard/pages/Home/EditPassword";
 import DisplayBooks from "./userDashboard/pages/Home/DisplayBooks";
 import DisplayBooksAdmin from "./dashboard/pages/DisplayBooksAdmin";
 import Chat from "./components/Chat";
+import Payment from "./components/Payment";
 
 function App() {
   window.setTimeout(() => {
@@ -59,6 +60,7 @@ function App() {
             <Route path="sell" element={<BookSellingPage />} />
             <Route path="recomm_book" element={<DisplayRecommBook />} />
             <Route path="/chat" element={<Chat />} />
+            <Route path="/payment" element={<Payment />} />
             {/* //**************************************** */}
             <Route path="dashboard">
               <Route index element={<Home_Dashboard />} />

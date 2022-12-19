@@ -36,9 +36,10 @@ const DisplaySrchBook = ({ book }) => {
                 <Card
                   variant="outlined"
                   style={{ backgroundColor: "lightblue" }}
+
                 >
                   {/* <CardMedia src={thumbNail} style={{height: 0, paddingTop: '56%' }}/> */}
-                  <Grid item pl={9} pt={3}>
+                  <Grid item pl={9} pt={3} >
                     <img
                       src={thumbNail}
                       alt="[no cover]"
