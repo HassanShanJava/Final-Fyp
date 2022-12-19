@@ -1,6 +1,6 @@
 import { Box, Button, Grid, Rating } from "@mui/material";
 import PhoneForwardedIcon from "@mui/icons-material/PhoneForwarded";
-import { useState } from "react";
+// import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../scss/_bkDetails.scss";
 
@@ -50,7 +50,7 @@ const BkDetails = ({ show, item }) => {
                   Back
                 </Button>
                 &nbsp;&nbsp;
-                <Link to="recomm_book/chat" >
+                <Link to="/chat" >
                 <Button variant="outlined" endIcon={<PhoneForwardedIcon />}>
                   CHAT
                 </Button>

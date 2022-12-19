@@ -58,7 +58,7 @@ function App() {
             <Route path="request" element={<BookRequestPage />} />
             <Route path="sell" element={<BookSellingPage />} />
             <Route path="recomm_book" element={<DisplayRecommBook />} />
-            <Route path="recomm_book/chat" element={<Chat />} />
+            <Route path="/chat" element={<Chat />} />
             {/* //**************************************** */}
             <Route path="dashboard">
               <Route index element={<Home_Dashboard />} />
