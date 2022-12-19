@@ -24,15 +24,15 @@ const BkDetails = ({ show, item }) => {
     <div className="overlay">
       <div className="overlay-inner">
         <div className="inner-box">
-          <Grid container spacing={5} p={5}>
-            <Grid lg={6} md={6} sm={6} xs={6}>
+          <Grid container spacing={6} p={6}>
+            <Grid lg={5} md={5} sm={5} xs={5}>
               <img src={thumbNail} alt={tiTle} />
               <Grid>
                 <Rating value={avgRating} readOnly precision={0.5} />
               </Grid>
             </Grid>
 
-            <Grid lg={6} md={6} sm={6} xs={6}>
+            <Grid lg={7} md={7} sm={7} xs={7}>
               <h2>{tiTle}</h2>
               {/* <h3 >{autHor}</h3> */}
               {autHor.map((author, i) => (
@@ -45,7 +45,7 @@ const BkDetails = ({ show, item }) => {
               <h6>
                 {pubLisher} | <span>{dateOfPublish}</span>
               </h6>
-              <Box pt={2} textAlign="center">
+              <Box pt={2} textAlign="inline">
                 <Button variant="contained" color="error" href="/">
                   Back
                 </Button>
@@ -53,6 +53,12 @@ const BkDetails = ({ show, item }) => {
                 <Link to="/chat" >
                 <Button variant="outlined" endIcon={<PhoneForwardedIcon />}>
                   CHAT
+                </Button>
+                </Link>
+                &nbsp;&nbsp;
+                <Link to="/chat" >
+                <Button variant="outlined" >
+                  Online Payment
                 </Button>
                 </Link>
               </Box>
